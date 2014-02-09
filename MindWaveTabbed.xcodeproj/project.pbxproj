@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		301A84E218A4BFC400A25E68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301A84E118A4BFC400A25E68 /* Foundation.framework */; };
+		301A84E418A4BFC400A25E68 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301A84E318A4BFC400A25E68 /* CoreGraphics.framework */; };
+		301A84E618A4BFC400A25E68 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301A84E518A4BFC400A25E68 /* UIKit.framework */; };
+		301A84EC18A4BFC400A25E68 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 301A84EA18A4BFC400A25E68 /* InfoPlist.strings */; };
+		301A84EE18A4BFC400A25E68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 301A84ED18A4BFC400A25E68 /* main.m */; };
+		301A84F218A4BFC400A25E68 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 301A84F118A4BFC400A25E68 /* AppDelegate.m */; };
+		301A84F518A4BFC400A25E68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 301A84F318A4BFC400A25E68 /* Main.storyboard */; };
+		301A84FD18A4BFC400A25E68 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 301A84FC18A4BFC400A25E68 /* Images.xcassets */; };
+		301A850418A4BFC400A25E68 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301A850318A4BFC400A25E68 /* XCTest.framework */; };
+		301A850518A4BFC400A25E68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301A84E118A4BFC400A25E68 /* Foundation.framework */; };
+		301A850618A4BFC400A25E68 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301A84E518A4BFC400A25E68 /* UIKit.framework */; };
+		301A850E18A4BFC400A25E68 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 301A850C18A4BFC400A25E68 /* InfoPlist.strings */; };
+		301A851018A4BFC400A25E68 /* MindWaveTabbedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 301A850F18A4BFC400A25E68 /* MindWaveTabbedTests.m */; };
+		301A851E18A4C36400A25E68 /* BrainDataHistoryDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 301A851D18A4C36400A25E68 /* BrainDataHistoryDocument.m */; };
+		301A852118A4C3C400A25E68 /* BrainDataEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 301A852018A4C3C400A25E68 /* BrainDataEntry.m */; };
+		301A852418A4C40300A25E68 /* BrainDataUnits.m in Sources */ = {isa = PBXBuildFile; fileRef = 301A852318A4C40300A25E68 /* BrainDataUnits.m */; };
+		30D6D55318A5A23600ACD7F0 /* RootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D6D55218A5A23600ACD7F0 /* RootTabBarController.m */; };
+		30D6D55618A5A25A00ACD7F0 /* HistoryNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D6D55518A5A25A00ACD7F0 /* HistoryNavigationController.m */; };
+		30D6D55918A5A27B00ACD7F0 /* EntryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D6D55818A5A27B00ACD7F0 /* EntryDetailViewController.m */; };
+		30D6D55C18A5A29900ACD7F0 /* AddEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D6D55B18A5A29900ACD7F0 /* AddEntryViewController.m */; };
+		30D6D55F18A5A2B800ACD7F0 /* GraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D6D55E18A5A2B800ACD7F0 /* GraphViewController.m */; };
+		30D6D56218A5A3B900ACD7F0 /* HistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D6D56118A5A3B900ACD7F0 /* HistoryTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		301A850718A4BFC400A25E68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301A84D618A4BFC400A25E68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 301A84DD18A4BFC400A25E68;
+			remoteInfo = MindWaveTabbed;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		301A84DE18A4BFC400A25E68 /* MindWaveTabbed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindWaveTabbed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		301A84E118A4BFC400A25E68 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		301A84E318A4BFC400A25E68 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		301A84E518A4BFC400A25E68 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		301A84E918A4BFC400A25E68 /* MindWaveTabbed-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MindWaveTabbed-Info.plist"; sourceTree = "<group>"; };
+		301A84EB18A4BFC400A25E68 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		301A84ED18A4BFC400A25E68 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		301A84EF18A4BFC400A25E68 /* MindWaveTabbed-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MindWaveTabbed-Prefix.pch"; sourceTree = "<group>"; };
+		301A84F018A4BFC400A25E68 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		301A84F118A4BFC400A25E68 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		301A84F418A4BFC400A25E68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		301A84FC18A4BFC400A25E68 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		301A850218A4BFC400A25E68 /* MindWaveTabbedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindWaveTabbedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		301A850318A4BFC400A25E68 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		301A850B18A4BFC400A25E68 /* MindWaveTabbedTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MindWaveTabbedTests-Info.plist"; sourceTree = "<group>"; };
+		301A850D18A4BFC400A25E68 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		301A850F18A4BFC400A25E68 /* MindWaveTabbedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MindWaveTabbedTests.m; sourceTree = "<group>"; };
+		301A851C18A4C36400A25E68 /* BrainDataHistoryDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrainDataHistoryDocument.h; sourceTree = "<group>"; };
+		301A851D18A4C36400A25E68 /* BrainDataHistoryDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrainDataHistoryDocument.m; sourceTree = "<group>"; };
+		301A851F18A4C3C400A25E68 /* BrainDataEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrainDataEntry.h; sourceTree = "<group>"; };
+		301A852018A4C3C400A25E68 /* BrainDataEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrainDataEntry.m; sourceTree = "<group>"; };
+		301A852218A4C40300A25E68 /* BrainDataUnits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrainDataUnits.h; sourceTree = "<group>"; };
+		301A852318A4C40300A25E68 /* BrainDataUnits.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrainDataUnits.m; sourceTree = "<group>"; };
+		30D6D55118A5A23600ACD7F0 /* RootTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTabBarController.h; sourceTree = "<group>"; };
+		30D6D55218A5A23600ACD7F0 /* RootTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTabBarController.m; sourceTree = "<group>"; };
+		30D6D55418A5A25A00ACD7F0 /* HistoryNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryNavigationController.h; sourceTree = "<group>"; };
+		30D6D55518A5A25A00ACD7F0 /* HistoryNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryNavigationController.m; sourceTree = "<group>"; };
+		30D6D55718A5A27B00ACD7F0 /* EntryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryDetailViewController.h; sourceTree = "<group>"; };
+		30D6D55818A5A27B00ACD7F0 /* EntryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryDetailViewController.m; sourceTree = "<group>"; };
+		30D6D55A18A5A29900ACD7F0 /* AddEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEntryViewController.h; sourceTree = "<group>"; };
+		30D6D55B18A5A29900ACD7F0 /* AddEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEntryViewController.m; sourceTree = "<group>"; };
+		30D6D55D18A5A2B800ACD7F0 /* GraphViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphViewController.h; sourceTree = "<group>"; };
+		30D6D55E18A5A2B800ACD7F0 /* GraphViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphViewController.m; sourceTree = "<group>"; };
+		30D6D56018A5A3B900ACD7F0 /* HistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewController.h; sourceTree = "<group>"; };
+		30D6D56118A5A3B900ACD7F0 /* HistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		301A84DB18A4BFC400A25E68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301A84E418A4BFC400A25E68 /* CoreGraphics.framework in Frameworks */,
+				301A84E618A4BFC400A25E68 /* UIKit.framework in Frameworks */,
+				301A84E218A4BFC400A25E68 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		301A84FF18A4BFC400A25E68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301A850418A4BFC400A25E68 /* XCTest.framework in Frameworks */,
+				301A850618A4BFC400A25E68 /* UIKit.framework in Frameworks */,
+				301A850518A4BFC400A25E68 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		301A84D518A4BFC400A25E68 = {
+			isa = PBXGroup;
+			children = (
+				301A84E718A4BFC400A25E68 /* MindWaveTabbed */,
+				301A850918A4BFC400A25E68 /* MindWaveTabbedTests */,
+				301A84E018A4BFC400A25E68 /* Frameworks */,
+				301A84DF18A4BFC400A25E68 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		301A84DF18A4BFC400A25E68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				301A84DE18A4BFC400A25E68 /* MindWaveTabbed.app */,
+				301A850218A4BFC400A25E68 /* MindWaveTabbedTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		301A84E018A4BFC400A25E68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				301A84E118A4BFC400A25E68 /* Foundation.framework */,
+				301A84E318A4BFC400A25E68 /* CoreGraphics.framework */,
+				301A84E518A4BFC400A25E68 /* UIKit.framework */,
+				301A850318A4BFC400A25E68 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		301A84E718A4BFC400A25E68 /* MindWaveTabbed */ = {
+			isa = PBXGroup;
+			children = (
+				301A851918A4C0B300A25E68 /* Model */,
+				301A851A18A4C0BD00A25E68 /* View */,
+				301A851B18A4C0C200A25E68 /* Controllers */,
+				301A84F018A4BFC400A25E68 /* AppDelegate.h */,
+				301A84F118A4BFC400A25E68 /* AppDelegate.m */,
+				301A84F318A4BFC400A25E68 /* Main.storyboard */,
+				301A84FC18A4BFC400A25E68 /* Images.xcassets */,
+				301A84E818A4BFC400A25E68 /* Supporting Files */,
+			);
+			path = MindWaveTabbed;
+			sourceTree = "<group>";
+		};
+		301A84E818A4BFC400A25E68 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				301A84E918A4BFC400A25E68 /* MindWaveTabbed-Info.plist */,
+				301A84EA18A4BFC400A25E68 /* InfoPlist.strings */,
+				301A84ED18A4BFC400A25E68 /* main.m */,
+				301A84EF18A4BFC400A25E68 /* MindWaveTabbed-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		301A850918A4BFC400A25E68 /* MindWaveTabbedTests */ = {
+			isa = PBXGroup;
+			children = (
+				301A850F18A4BFC400A25E68 /* MindWaveTabbedTests.m */,
+				301A850A18A4BFC400A25E68 /* Supporting Files */,
+			);
+			path = MindWaveTabbedTests;
+			sourceTree = "<group>";
+		};
+		301A850A18A4BFC400A25E68 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				301A850B18A4BFC400A25E68 /* MindWaveTabbedTests-Info.plist */,
+				301A850C18A4BFC400A25E68 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		301A851918A4C0B300A25E68 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				301A851C18A4C36400A25E68 /* BrainDataHistoryDocument.h */,
+				301A851D18A4C36400A25E68 /* BrainDataHistoryDocument.m */,
+				301A851F18A4C3C400A25E68 /* BrainDataEntry.h */,
+				301A852018A4C3C400A25E68 /* BrainDataEntry.m */,
+				301A852218A4C40300A25E68 /* BrainDataUnits.h */,
+				301A852318A4C40300A25E68 /* BrainDataUnits.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		301A851A18A4C0BD00A25E68 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		301A851B18A4C0C200A25E68 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				30D6D55118A5A23600ACD7F0 /* RootTabBarController.h */,
+				30D6D55218A5A23600ACD7F0 /* RootTabBarController.m */,
+				30D6D55418A5A25A00ACD7F0 /* HistoryNavigationController.h */,
+				30D6D55518A5A25A00ACD7F0 /* HistoryNavigationController.m */,
+				30D6D56018A5A3B900ACD7F0 /* HistoryTableViewController.h */,
+				30D6D56118A5A3B900ACD7F0 /* HistoryTableViewController.m */,
+				30D6D55718A5A27B00ACD7F0 /* EntryDetailViewController.h */,
+				30D6D55818A5A27B00ACD7F0 /* EntryDetailViewController.m */,
+				30D6D55A18A5A29900ACD7F0 /* AddEntryViewController.h */,
+				30D6D55B18A5A29900ACD7F0 /* AddEntryViewController.m */,
+				30D6D55D18A5A2B800ACD7F0 /* GraphViewController.h */,
+				30D6D55E18A5A2B800ACD7F0 /* GraphViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		301A84DD18A4BFC400A25E68 /* MindWaveTabbed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 301A851318A4BFC400A25E68 /* Build configuration list for PBXNativeTarget "MindWaveTabbed" */;
+			buildPhases = (
+				301A84DA18A4BFC400A25E68 /* Sources */,
+				301A84DB18A4BFC400A25E68 /* Frameworks */,
+				301A84DC18A4BFC400A25E68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MindWaveTabbed;
+			productName = MindWaveTabbed;
+			productReference = 301A84DE18A4BFC400A25E68 /* MindWaveTabbed.app */;
+			productType = "com.apple.product-type.application";
+		};
+		301A850118A4BFC400A25E68 /* MindWaveTabbedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 301A851618A4BFC400A25E68 /* Build configuration list for PBXNativeTarget "MindWaveTabbedTests" */;
+			buildPhases = (
+				301A84FE18A4BFC400A25E68 /* Sources */,
+				301A84FF18A4BFC400A25E68 /* Frameworks */,
+				301A850018A4BFC400A25E68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				301A850818A4BFC400A25E68 /* PBXTargetDependency */,
+			);
+			name = MindWaveTabbedTests;
+			productName = MindWaveTabbedTests;
+			productReference = 301A850218A4BFC400A25E68 /* MindWaveTabbedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		301A84D618A4BFC400A25E68 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Media;
+				TargetAttributes = {
+					301A850118A4BFC400A25E68 = {
+						TestTargetID = 301A84DD18A4BFC400A25E68;
+					};
+				};
+			};
+			buildConfigurationList = 301A84D918A4BFC400A25E68 /* Build configuration list for PBXProject "MindWaveTabbed" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 301A84D518A4BFC400A25E68;
+			productRefGroup = 301A84DF18A4BFC400A25E68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				301A84DD18A4BFC400A25E68 /* MindWaveTabbed */,
+				301A850118A4BFC400A25E68 /* MindWaveTabbedTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		301A84DC18A4BFC400A25E68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301A84FD18A4BFC400A25E68 /* Images.xcassets in Resources */,
+				301A84EC18A4BFC400A25E68 /* InfoPlist.strings in Resources */,
+				301A84F518A4BFC400A25E68 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		301A850018A4BFC400A25E68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301A850E18A4BFC400A25E68 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		301A84DA18A4BFC400A25E68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301A852418A4C40300A25E68 /* BrainDataUnits.m in Sources */,
+				30D6D56218A5A3B900ACD7F0 /* HistoryTableViewController.m in Sources */,
+				301A84F218A4BFC400A25E68 /* AppDelegate.m in Sources */,
+				30D6D55918A5A27B00ACD7F0 /* EntryDetailViewController.m in Sources */,
+				30D6D55F18A5A2B800ACD7F0 /* GraphViewController.m in Sources */,
+				30D6D55618A5A25A00ACD7F0 /* HistoryNavigationController.m in Sources */,
+				30D6D55C18A5A29900ACD7F0 /* AddEntryViewController.m in Sources */,
+				301A84EE18A4BFC400A25E68 /* main.m in Sources */,
+				30D6D55318A5A23600ACD7F0 /* RootTabBarController.m in Sources */,
+				301A851E18A4C36400A25E68 /* BrainDataHistoryDocument.m in Sources */,
+				301A852118A4C3C400A25E68 /* BrainDataEntry.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		301A84FE18A4BFC400A25E68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301A851018A4BFC400A25E68 /* MindWaveTabbedTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		301A850818A4BFC400A25E68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 301A84DD18A4BFC400A25E68 /* MindWaveTabbed */;
+			targetProxy = 301A850718A4BFC400A25E68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		301A84EA18A4BFC400A25E68 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				301A84EB18A4BFC400A25E68 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		301A84F318A4BFC400A25E68 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				301A84F418A4BFC400A25E68 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		301A850C18A4BFC400A25E68 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				301A850D18A4BFC400A25E68 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		301A851118A4BFC400A25E68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		301A851218A4BFC400A25E68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		301A851418A4BFC400A25E68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MindWaveTabbed/MindWaveTabbed-Prefix.pch";
+				INFOPLIST_FILE = "MindWaveTabbed/MindWaveTabbed-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		301A851518A4BFC400A25E68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MindWaveTabbed/MindWaveTabbed-Prefix.pch";
+				INFOPLIST_FILE = "MindWaveTabbed/MindWaveTabbed-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		301A851718A4BFC400A25E68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MindWaveTabbed.app/MindWaveTabbed";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MindWaveTabbed/MindWaveTabbed-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MindWaveTabbedTests/MindWaveTabbedTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		301A851818A4BFC400A25E68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MindWaveTabbed.app/MindWaveTabbed";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MindWaveTabbed/MindWaveTabbed-Prefix.pch";
+				INFOPLIST_FILE = "MindWaveTabbedTests/MindWaveTabbedTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		301A84D918A4BFC400A25E68 /* Build configuration list for PBXProject "MindWaveTabbed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				301A851118A4BFC400A25E68 /* Debug */,
+				301A851218A4BFC400A25E68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		301A851318A4BFC400A25E68 /* Build configuration list for PBXNativeTarget "MindWaveTabbed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				301A851418A4BFC400A25E68 /* Debug */,
+				301A851518A4BFC400A25E68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		301A851618A4BFC400A25E68 /* Build configuration list for PBXNativeTarget "MindWaveTabbedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				301A851718A4BFC400A25E68 /* Debug */,
+				301A851818A4BFC400A25E68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 301A84D618A4BFC400A25E68 /* Project object */;
+}
