@@ -32,5 +32,10 @@
                       withDuration:(int)durationInMinutes
                         forDate:(NSDate *)date;
 
++ (NSString*)stringForMeditation:(int)meditation;
+- (NSString*)stringForMeditation:(int)meditation;
+
++ (NSString*)stringForDuration:(int)duration;
+- (NSString*)stringForDuration:(int)duration;
 
 @end

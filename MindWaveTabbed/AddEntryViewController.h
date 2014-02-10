@@ -10,4 +10,11 @@
 
 @interface AddEntryViewController : UIViewController
 
+@property (assign, nonatomic, readonly) int durationInMinutes;
+@property (assign, nonatomic, readonly) int meditation;
+@property (strong, nonatomic, readonly) NSDate *date;
+
+@property (weak, nonatomic, readonly) UIDatePicker *meditationTimer;
+@property(nonatomic, readonly) NSTimeInterval countDownDuration;
+
 @end

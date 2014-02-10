@@ -31,5 +31,6 @@ extern NSString * const BrainDataHistoryDocumentNotificationIndexPathKey;
 
 - (void)enumerateEntriesAscending:(BOOL)ascending
                         withBlock:(EntryEnumeratorBlock)block;
-
+- (NSArray*)brainDataEntriesAfter:(NSDate *)startDate
+                        before:(NSDate *)endDate;
 @end

@@ -7,9 +7,11 @@
 //
 
 #import "HistoryTableViewController.h"
-#import "EntryDetailViewController.h"
+#import "HistoryCell.h"
 #import "BrainDataHistoryDocument.h"
+#import "EntryDetailViewController.h"
 #import "BrainDataEntry.h"
+#import "AddEntryViewController.h"
 
 @interface HistoryTableViewController ()
 
@@ -44,7 +46,7 @@
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.navigationItem.leftBarButtonItem = self.editButtonItem;
 }
 
 // TODO: Delete This After Testing!
@@ -79,17 +81,14 @@
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"History Cell";
-    
-    UITableViewCell *cell =
+    HistoryCell *cell =
     [tableView dequeueReusableCellWithIdentifier:CellIdentifier
                                     forIndexPath:indexPath];
     
-    BrainDataEntry *entry = [self.brainDataHistoryDocument
-                          entryAtIndexPath:indexPath];
-    
-    cell.textLabel.text = [entry description];
+    [self configureCell:cell forIndexPath:indexPath];
     
     return cell;
+
 }
 /*
 // Override to support conditional editing of the table view.
@@ -100,20 +99,19 @@
 }
 */
 
-/*
+
 // Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableView
+commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
+        [self.brainDataHistoryDocument deleteEntryAtIndexPath:indexPath];
+    }
     else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+        // Create a new instance of the appropriate class, insert
+        // it into the array, and add a new row to the table view
+    }
 }
-*/
-
 /*
 // Override to support rearranging the table view.
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
@@ -147,15 +145,12 @@
  
  - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
  {
-    if ([segue.identifier isEqualToString:@"Entry Detail Segue"])
-    {
-    EntryDetailViewController *controller =
-    segue.destinationViewController;
- 
-    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-    controller.entry =
-    [self.brainDataHistoryDocument entryAtIndexPath:indexPath];
-    }
+    
+     if ([segue.identifier isEqualToString:@"Entry Detail Segue"])
+     {
+         [self configureBrainDataEntryViewController:
+          segue.destinationViewController];
+     }
  }
 
 
@@ -257,5 +252,66 @@
         self.documentChangeCompleteObserver = nil;
     }
 }
+
+#pragma mark - Storyboard Unwinding Methods
+
+- (IBAction)addNewEntrySaved:(UIStoryboardSegue *)segue
+{
+    AddEntryViewController *controller = segue.sourceViewController;
+    
+    
+    BrainDataEntry *entry = [BrainDataEntry entryWithBrainData:controller.meditation
+                                                      withDuration:controller.durationInMinutes
+                                                       forDate:controller.date];
+    
+    [self.brainDataHistoryDocument addEntry:entry];
+}
+
+- (IBAction)addNewEntryCanceled:(UIStoryboardSegue *)segue
+{
+    // We don't need to do anything here.
+}
+
+
+
+#pragma mark - Private Methods
+
+- (void)configureCell:(HistoryCell *)cell forIndexPath:(NSIndexPath *)indexPath
+{
+    BrainDataEntry *entry =
+    [self.brainDataHistoryDocument entryAtIndexPath:indexPath];
+    
+    cell.meditationLabel.text = [entry stringForMeditation:5];
+    
+    cell.dateLabel.text = [NSDateFormatter
+                           localizedStringFromDate:entry.date
+                           dateStyle:NSDateFormatterShortStyle
+                           timeStyle:NSDateFormatterShortStyle];
+}
+
+- (void)configureBrainDataEntryViewController:
+(EntryDetailViewController *)controller
+{
+    NSIndexPath *selectedPath = [self.tableView indexPathForSelectedRow];
+    BrainDataEntry *entry =
+    [self.brainDataHistoryDocument entryAtIndexPath:selectedPath];
+    
+    NSCalendar *calendar =
+    [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    
+    NSDateComponents *dateComponents =
+    [calendar components:NSYearCalendarUnit | NSMonthCalendarUnit |
+     NSDayCalendarUnit fromDate:entry.date];
+    
+    [dateComponents setMonth:[dateComponents month] - 1];
+    NSDate *lastMonth = [calendar dateFromComponents:dateComponents];
+    
+    controller.entry =entry;
+    controller.lastMonthsEntries =
+    [self.brainDataHistoryDocument brainDataEntriesAfter:lastMonth
+                                            before:entry.date];
+}
+
+
 
 @end

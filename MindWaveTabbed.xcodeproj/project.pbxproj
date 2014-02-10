@@ -23,6 +23,7 @@
 		301A851E18A4C36400A25E68 /* BrainDataHistoryDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 301A851D18A4C36400A25E68 /* BrainDataHistoryDocument.m */; };
 		301A852118A4C3C400A25E68 /* BrainDataEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 301A852018A4C3C400A25E68 /* BrainDataEntry.m */; };
 		301A852418A4C40300A25E68 /* BrainDataUnits.m in Sources */ = {isa = PBXBuildFile; fileRef = 301A852318A4C40300A25E68 /* BrainDataUnits.m */; };
+		30B39B7018A84D85003AB2A9 /* HistoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B39B6F18A84D85003AB2A9 /* HistoryCell.m */; };
 		30D6D55318A5A23600ACD7F0 /* RootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D6D55218A5A23600ACD7F0 /* RootTabBarController.m */; };
 		30D6D55618A5A25A00ACD7F0 /* HistoryNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D6D55518A5A25A00ACD7F0 /* HistoryNavigationController.m */; };
 		30D6D55918A5A27B00ACD7F0 /* EntryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D6D55818A5A27B00ACD7F0 /* EntryDetailViewController.m */; };
@@ -65,6 +66,8 @@
 		301A852018A4C3C400A25E68 /* BrainDataEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrainDataEntry.m; sourceTree = "<group>"; };
 		301A852218A4C40300A25E68 /* BrainDataUnits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrainDataUnits.h; sourceTree = "<group>"; };
 		301A852318A4C40300A25E68 /* BrainDataUnits.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrainDataUnits.m; sourceTree = "<group>"; };
+		30B39B6E18A84D85003AB2A9 /* HistoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryCell.h; sourceTree = "<group>"; };
+		30B39B6F18A84D85003AB2A9 /* HistoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryCell.m; sourceTree = "<group>"; };
 		30D6D55118A5A23600ACD7F0 /* RootTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTabBarController.h; sourceTree = "<group>"; };
 		30D6D55218A5A23600ACD7F0 /* RootTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTabBarController.m; sourceTree = "<group>"; };
 		30D6D55418A5A25A00ACD7F0 /* HistoryNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryNavigationController.h; sourceTree = "<group>"; };
@@ -193,6 +196,8 @@
 		301A851A18A4C0BD00A25E68 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				30B39B6E18A84D85003AB2A9 /* HistoryCell.h */,
+				30B39B6F18A84D85003AB2A9 /* HistoryCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -319,6 +324,7 @@
 				30D6D55918A5A27B00ACD7F0 /* EntryDetailViewController.m in Sources */,
 				30D6D55F18A5A2B800ACD7F0 /* GraphViewController.m in Sources */,
 				30D6D55618A5A25A00ACD7F0 /* HistoryNavigationController.m in Sources */,
+				30B39B7018A84D85003AB2A9 /* HistoryCell.m in Sources */,
 				30D6D55C18A5A29900ACD7F0 /* AddEntryViewController.m in Sources */,
 				301A84EE18A4BFC400A25E68 /* main.m in Sources */,
 				30D6D55318A5A23600ACD7F0 /* RootTabBarController.m in Sources */,

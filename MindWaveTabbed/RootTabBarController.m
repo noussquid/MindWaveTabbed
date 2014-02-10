@@ -63,7 +63,7 @@
     [yesterday dateByAddingTimeInterval:-twentyFourHours];
     
     BrainDataEntry *entry1 =
-    [BrainDataEntry entryWithBrainData:100 withDuration:10 forDate:twoDaysAgo];
+    [BrainDataEntry entryWithBrainData:80 withDuration:10 forDate:twoDaysAgo];
     
     BrainDataEntry *entry2 =
     [BrainDataEntry entryWithBrainData:60 withDuration:5 forDate:yesterday];

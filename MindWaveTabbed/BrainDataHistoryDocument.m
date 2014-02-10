@@ -141,6 +141,20 @@ NSString * const BrainDataHistoryDocumentNotificationIndexPathKey =
      }];
 }
 
+- (NSArray *)brainDataEntriesAfter:(NSDate *)startDate
+                         before:(NSDate *)endDate
+{
+    
+    NSPredicate *betweenDates =
+    [NSPredicate predicateWithBlock:^BOOL(BrainDataEntry *entry,
+                                          NSDictionary *bindings) {
+        return ([entry.date compare:startDate] != NSOrderedAscending) &&
+        ([entry.date compare:endDate] != NSOrderedDescending);
+    }];
+    
+    return [self.brainDataHistory filteredArrayUsingPredicate:betweenDates];
+}
+
 #pragma mark - NSObject Methods
 
 -(NSString *)description

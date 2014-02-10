@@ -8,6 +8,8 @@
 
 #import "BrainDataEntry.h"
 
+static NSNumberFormatter* formatter;
+
 @implementation BrainDataEntry
 // Designated initializer.
 - (id) initWithBrainData:(int)meditation
@@ -24,6 +26,8 @@
     return self;
 }
 
+
+
 // Must override the superclass's designated initializer.
 - (id)init
 {
@@ -39,6 +43,45 @@
                        forDate:(NSDate *)date
 {
     return [[self alloc] initWithBrainData:meditation withDuration:minutes forDate:date];
+}
+
++ (void)initialize
+{
+    if (self == [BrainDataEntry class])
+    {
+        formatter = [[NSNumberFormatter alloc] init];
+        [formatter setNumberStyle:NSNumberFormatterDecimalStyle];
+        [formatter setMinimum:[NSNumber numberWithInt:0]];
+        [formatter setMaximumFractionDigits:2];
+    }
+}
+
++ (NSString*)stringForMeditation:(int)meditation
+{
+    NSString* meditationString =
+    [formatter stringFromNumber:@(meditation)];
+    
+    return [NSString stringWithFormat:@"%@",
+            meditationString];
+}
+
+- (NSString*)stringForMeditation:(int)meditation
+{
+    return [BrainDataEntry stringForMeditation:[self meditationValue]];
+}
+
+- (NSString*)stringForDuration:(int)duration
+{
+    return [BrainDataEntry stringForDuration:[self durationInMinutes]];
+}
+
++ (NSString*)stringForDuration:(int)duration
+{
+    NSString* durationString =
+    [formatter stringFromNumber:@(duration)];
+    
+    return [NSString stringWithFormat:@"%@",
+            durationString];
 }
 
 #pragma mark - NSObject Methods

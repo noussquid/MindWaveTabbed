@@ -11,5 +11,8 @@
 @class BrainDataEntry;
 
 @interface EntryDetailViewController : UITableViewController
+
 @property (strong, nonatomic) BrainDataEntry *entry;
+@property (strong, nonatomic) NSArray *lastMonthsEntries;
+
 @end
