@@ -7,6 +7,7 @@
 //
 
 #import "GraphViewController.h"
+#import "GraphView.h"
 
 @interface GraphViewController ()
 

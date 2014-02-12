@@ -51,6 +51,16 @@
     }
 }
 
+
+
+
+- (void)viewWillAppear:(BOOL)animated
+{
+
+    [super viewWillAppear:animated];
+}
+
+
 - (void)addMockData
 {
     NSTimeInterval twentyFourHours = 60.0 * 60.0 * 24.0;
@@ -81,5 +91,6 @@
                                         withObject:entry3
                                         afterDelay:4.0];
 }
+
 
 @end

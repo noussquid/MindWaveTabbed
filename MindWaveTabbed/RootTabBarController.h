@@ -7,6 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TGAccessoryManager.h"
+#import "TGAccessoryDelegate.h"
+#import <ExternalAccessory/ExternalAccessory.h>
+
+
 
 @class BrainDataHistoryDocument;
 
@@ -14,5 +19,7 @@
 
 @property (strong, nonatomic) BrainDataHistoryDocument
 *brainDataHistoryDocument;
+
+
 
 @end
